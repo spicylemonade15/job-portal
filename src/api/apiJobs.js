@@ -1,5 +1,5 @@
 import supabaseClient from "@/utils/supabase"
-// apiJobs
+
 export async function getJobs(token, {location, company_id, searchQuery}) {
     const supabase = await supabaseClient(token);
 
