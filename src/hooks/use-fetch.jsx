@@ -27,7 +27,7 @@ const useFetch = (cb, options={}) => {
         }
     }
 
-    return  {fn, data, loading, error };
+    return  { data, loading, error, fn };
 }
 
 export default useFetch;
