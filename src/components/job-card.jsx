@@ -35,7 +35,8 @@ const JobCard = ({
   useEffect(()=> {
     if(savedJob!==undefined) setSaved(savedJob?.length > 0)
   }, [savedJob])
-  return <Card>
+  return (
+  <Card className="flex flex-col">
     <CardHeader>
       <CardTitle className="felx justify-between font-bold">{job.title}</CardTitle>
       {isMyJob && (
@@ -74,6 +75,7 @@ const JobCard = ({
       
     </CardFooter>
   </Card>
+  )
 }
 
 export default JobCard
